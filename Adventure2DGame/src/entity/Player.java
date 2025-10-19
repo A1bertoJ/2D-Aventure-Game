@@ -176,6 +176,7 @@ public class Player extends Entity{
 			}			
 			break;
 		}
+		System.out.println(worldX / gp.tileSize + " " + worldY / gp.tileSize);
 		// Draw the current sprite centered on the screen
 		g2.drawImage(image, screenX, screenY, gp.tileSize, gp.tileSize, null);
 	}

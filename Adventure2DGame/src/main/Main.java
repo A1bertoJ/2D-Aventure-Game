@@ -20,13 +20,14 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		// Creat application window and settings
+		// Create application window and settings
 		JFrame window = new JFrame();
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setResizable(false);
 		window.setTitle("2D Aventure");
 		
 		// Add GamePanel (game logic and drawing)
+
 		GamePanel gamePanel = new GamePanel();
 		window.add(gamePanel);
 		window.pack();
@@ -36,6 +37,7 @@ public class Main {
 		window.setVisible(true);
 		
 		// Start the game loop thread
+		gamePanel.setupGame();
 		gamePanel.startGameThread();
 	}
 
